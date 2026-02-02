@@ -2,21 +2,24 @@
 import {Route} from "react-router-dom";
   import { ToastContainer } from 'react-toastify';
   import { Camera } from 'lucide-react';
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { Header } from "./layout/Header";
+import PageContent from "./layout/PageContent";
+import { Footer } from "./layout/Footer";
 
 function App() {
 
 
   return (
-    <>
-    <ToastContainer />
-  
+    <BrowserRouter>
+    <div className="flex min-h-screen flex-col">
+      <Header/>
+      <PageContent/>
+      <Footer/>
+    </div>
      
-       <h1 class="text-3xl text-center font-bold underline">
-    Hello world!
-  </h1>
-  <Camera size={78}   className="mx-auto" color="red"  />
       
-    </>
+    </BrowserRouter>
   )
 }
 
