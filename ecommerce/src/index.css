@@ -1,4 +1,45 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+body {
+  font-family: "Montserrat" ,sans-serif;
+}
 
+@theme{
+    --color-success:#2DC071;
+    --color-primary:#23A6F0;
+    --color-text:#252B42;
+    --color-secondText:#737373;
+    --color-muted:#BDBDBD;
+    --color-secondary:#23856D;
+    --color-alert:#E77C40;
+    --color-dark-background:#252B42;
+    --color-disabled-element:#8EC2F2;
+}
+
+/* Pagination bullets -> line style */
+.swiper-pagination-bullet {
+  width: 60px !important;
+  height: 6px !important;
+  border-radius: 0 !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+/* Mobile: hide pagination */
+.swiper-pagination {
+  display: none !important;
+}
+
+/* Desktop: show pagination */
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: flex !important;
+    justify-content: center;
+    
+  }
+}

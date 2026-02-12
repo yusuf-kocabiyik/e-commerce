@@ -34,7 +34,7 @@ export const Navbar = ()=>{
   },[])
 
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b bg-white ">
         {/* Top Contact Bar (Desktop only) */}
         <div className="hidden md:flex items-center justify-between px-8 py-2 bg-slate-800 text-white text-sm">
         {/* Left */}
@@ -84,7 +84,7 @@ export const Navbar = ()=>{
             </button>
 
             {desktopShopOpen && (
-                <div className="absolute left-0 top-full mt-2 flex flex-col bg-white border w-32">
+                <div className="absolute  z-100 left-0 top-full mt-2 flex flex-col bg-white border w-32">
                 <Link to="/shop1" className="px-4 py-2 hover:bg-gray-100">
                     Shop 1
                 </Link>
