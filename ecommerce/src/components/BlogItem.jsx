@@ -4,13 +4,13 @@ import { MessageSquare } from 'lucide-react';
 
 export const BlogItem =({blogs})=>{
     
-    return(<div className='flex flex-col gap-8  md:gap-3 md:flex-row md:w-full md:justify-center md:mx-auto md:w-100  '> 
+    return(<div className='flex flex-col gap-8  md:gap-3 md:flex-row  md:justify-center md:mx-auto md:w-80  '> 
 
         {
             blogs.map((blog)=>(
 
                 <div className="flex flex-col gap-4 shadow-lg py-2 px-2 items-center" key={blog.id}>
-                    <img className='w-80 h-75 md:min-w-100 md:max-h-90' src={blog.img} alt="blog" />
+                    <img className='w-80 h-75 md:min-w-70 md:max-h-70' src={blog.img} alt="blog" />
                     <div className="flex w-full px-2 justify-start gap-2 ">
                         <a className="text-disabled-element" href="">Google</a>
                         <a className='text-secondText' href="">Trending</a>
